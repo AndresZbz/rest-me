@@ -35,7 +35,7 @@ func main() {
 			url := url_field.GetText()
 
 			if url == "" {
-				result.SetText("Error: URL is required", false)
+				result.SetText("Error: URL is required C:", false)
 				return
 			}
 
@@ -50,6 +50,7 @@ func main() {
 			} else {
 				// POST / PUT todo: add body
 				req, err = http.NewRequest(selected_method, url, nil)
+				result.SetText(fmt.Sprintf("Different methods than 'GET' will not work atm. %v", err), false)
 			}
 			
 			if err != nil {
