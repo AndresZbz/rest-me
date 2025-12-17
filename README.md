@@ -1,6 +1,6 @@
 # Rest Me
 
-A TUI API/REST Client
+A TUI API/REST Client to fetch apis
 
 > [!WARNING]
 > This was made as a way to learn more about TUIs applications using Go, this project's still experimental do not expect a complex or completed application.
